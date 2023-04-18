@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WiFi智能家居安防系统</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">主页</a></li>
+        <li><a href="#devices">设备管理</a></li>
+        <li><a href="#settings">系统设置</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="home">
+      <h1>系统概览</h1>
+      <div id="device-status">设备状态卡片</div>
+      <div id="recent-activity">最近活动记录</div>
+      <div id="notifications">通知栏</div>
+    </section>
+    
+    <section id="devices">
+      <h1>设备管理</h1>
+      <div id="device-list">设备列表</div>
+      <button id="add-device">添加设备</button>
+    </section>
+    
+    <section id="settings">
+      <h1>系统设置</h1>
+      <form id="settings-form">
+        <!-- 在此处添加设置表单元素 -->
+        <label for="wifi-name">WiFi名称：</label>
+        <input type="text" id="wifi-name" name="wifi-name">
+        <br>
+        <label for="wifi-password">WiFi密码：</label>
+        <input type="password" id="wifi-password" name="wifi-password">
+        <br>
+        <input type="submit" value="保存设置">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 WiFi智能家居安防系统. All rights reserved.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
+styles.css:
+
+css
+Copy code
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+scripts.js:
+
+javascript
+Copy code
+document.addEventListener("DOMContentLoaded", function() {
+  // 在此处添加JavaScript代码以实现页面交互和动态内容更新
+});
